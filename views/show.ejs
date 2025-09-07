@@ -1,0 +1,37 @@
+<% layout("./layouts/boilerplate") %>
+
+    <body>
+        <div class="description">
+            <div class="left-desc">
+                <img src="<%= product.img %>" width="500">
+                <div class="other-desc">
+                    <p><strong>Price : </strong> &#8377;<%= product.price %>
+                    </p>
+                    <p><strong>Quantity : </strong>
+                        <%= product.quantity %>
+                    </p>
+
+                    <form action="/add-to-cart" method="post">
+                    <input type="hidden" name="productId" value="<%= product._id %>">
+                    <button type="submit" class="btn">Add to Cart</button>
+                </form>
+                </div>
+            </div>
+
+            <div class="right-desc">
+                <h2>
+                    <%= product.name %>
+                </h2>
+                <br>
+                <p><strong>Brand : </strong>
+                    <%= product.brand %>
+                </p>
+                <br>
+                <p><strong>Description : </strong>
+                    <%= product.description %>
+                </p>
+            </div>
+
+    
+        </div>
+    </body>

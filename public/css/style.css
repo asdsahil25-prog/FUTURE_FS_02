@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+font-family: "Baloo Bhai 2", sans-serif;
+}
+
+.listing {
+    padding: 20px;
+}
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product-container a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.product-card {
+    height: 350px;
+    width: 250px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 16px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.product-image {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 12px;
+    object-fit: contain;
+}
+
+.product-detail {
+    width: 100%;
+    text-align: left;
+}
+
+.product-title {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.navbar {
+    height: 50px;
+    background-color: #9400D3	;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.25rem;
+}
+
+.right-section {
+   border: 2px solid white;
+    border-radius: 10px;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    width: 30%;
+    min-width: 200px;
+}
+
+.input {
+    border-radius: 4px;
+    border: 0.4px solid black;
+    height: 25px;
+    outline: none;
+    padding: 5px;
+    width: 400px;
+}
+
+.search-bar i {
+    margin: 5px;
+    font-size: 1.25rem;
+}
+
+
+
+.description {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.left-desc {
+    /* height: 500px; */
+   width: 40%;
+    padding: 10px;
+}
+
+.right-desc {
+    width: 35%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+
+}
+
+.other-desc {
+    width: 200px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.other-desc p {
+    margin-bottom: 12px;
+}
+.btn {
+    padding: 12px;
+    background-color: rgb(149, 5, 197);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3 ease;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    background-color: rgb(120, 0, 160);
+}
+
+.user-carts {
+    padding: 20px;
+}
+
+.cart-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.cart {
+    width: 50%;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+}
+
+.cart-description {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.cart-description p {
+    font-size: 1.25rem;
+}
+
+.cart-description input {
+    width: 75px;
+    outline: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.cart-btn{
+    font-size: 1.25rem;
+    padding: 3px;
+    margin: 10px;
+    color: red;
+}
+
+
+.other-desc a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.other-desc p {
+    font-size: 1.1rem;
+}

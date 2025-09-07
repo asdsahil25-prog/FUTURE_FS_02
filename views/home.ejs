@@ -1,0 +1,26 @@
+<% layout("./layouts/boilerplate") %>
+
+    <body>
+        <div class="listing">
+            <div class="product-container">
+                <% for (product of products) { %>
+                    <a href="/product/<%= product._id %>">
+                    <div class="product-card">
+                        <img class="product-image" width="200" src="<%=product.img%>" alt="product_img">
+                        <div class="product-detail">
+                        <p class="product-title">
+                            <%=product.name %>
+                        </p>
+                        <p>Brand : <%= product.brand %>
+                        </p>
+                        <p>Category : <%= product.category %>
+                        </p>
+                        <p>Price : &#8377;<%= product.price %>
+                        </p>
+                        </div>
+                    </div>
+                </a>
+                    <% } %>
+            </div>
+        </div>
+    </body>
